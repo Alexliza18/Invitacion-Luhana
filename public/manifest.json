@@ -1,0 +1,16 @@
+{
+  "name": "Mis XV Años — Luhana",
+  "short_name": "XV Luhana",
+  "description": "Invitación digital para los XV Años de Luhana",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf3e7",
+  "theme_color": "#c9a24b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

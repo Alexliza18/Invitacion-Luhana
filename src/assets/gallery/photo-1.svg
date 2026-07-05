@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8e9ec"/>
+      <stop offset="100%" stop-color="#eec9c0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg1)"/>
+  <rect x="40" y="40" width="720" height="920" fill="none" stroke="#c9a24b" stroke-width="2"/>
+  <circle cx="400" cy="440" r="90" fill="none" stroke="#c9a24b" stroke-width="2"/>
+  <path d="M400 400c-30 0-54 24-54 54 0 40 54 76 54 76s54-36 54-76c0-30-24-54-54-54z" fill="#c9a24b" opacity="0.7"/>
+  <text x="400" y="620" font-family="Georgia, serif" font-size="34" fill="#8a6a45" text-anchor="middle" letter-spacing="4">RECUERDO 01</text>
+</svg>
