@@ -7,6 +7,9 @@ import { BackToTop } from '../components/BackToTop.tsx';
 
 const Countdown = lazy(() => import('../sections/Countdown.tsx').then((m) => ({ default: m.Countdown })));
 const Story = lazy(() => import('../sections/Story.tsx').then((m) => ({ default: m.Story })));
+const ParentsMessage = lazy(() =>
+  import('../sections/ParentsMessage.tsx').then((m) => ({ default: m.ParentsMessage })),
+);
 const Gallery = lazy(() => import('../sections/Gallery.tsx').then((m) => ({ default: m.Gallery })));
 const EventInfo = lazy(() => import('../sections/EventInfo.tsx').then((m) => ({ default: m.EventInfo })));
 const Location = lazy(() => import('../sections/Location.tsx').then((m) => ({ default: m.Location })));
@@ -42,7 +45,8 @@ export function InvitationPage() {
           <Box>
             <Countdown targetIso={eventConfig.eventDateIso} />
             <Story content={eventConfig.story} />
-            <Gallery images={eventConfig.gallery} />
+            <ParentsMessage content={eventConfig.parentsMessage} />
+            <Gallery images={eventConfig.gallery} hashtag={eventConfig.hashtag} />
             <EventInfo ceremony={eventConfig.ceremony} reception={eventConfig.reception} />
             <Location reception={eventConfig.reception} />
             <DressCode content={eventConfig.dressCode} />

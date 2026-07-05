@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+.vercel
 
 # Environment variables (contiene el webhook de RSVP; no se sube al repo)
 .env

@@ -1,4 +1,4 @@
-import { Box, Container } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import { SectionTitle } from '../components/SectionTitle.tsx';
 import { Lightbox } from '../components/Lightbox.tsx';
@@ -7,15 +7,25 @@ import type { GalleryImage } from '../types/event.types.ts';
 
 interface GalleryProps {
   images: GalleryImage[];
+  hashtag: string;
 }
 
-export function Gallery({ images }: GalleryProps) {
+export function Gallery({ images, hashtag }: GalleryProps) {
   const lightbox = useLightbox(images.length);
 
   return (
     <Box component="section" sx={{ py: { xs: 8, md: 12 }, bgcolor: 'background.default' }}>
       <Container maxWidth="md">
         <SectionTitle eyebrow="Momentos" title="Galería" />
+        <Typography
+          variant="body2"
+          sx={{ textAlign: 'center', color: 'text.secondary', mt: -4, mb: 5 }}
+        >
+          Comparte tus fotos de la celebración con{' '}
+          <Box component="span" sx={{ color: 'primary.main', fontWeight: 600 }}>
+            {hashtag}
+          </Box>
+        </Typography>
         <Box
           sx={{
             display: 'grid',

@@ -24,6 +24,13 @@ export interface StoryContent {
   paragraphs: string[];
 }
 
+export interface ParentsMessageContent {
+  eyebrow?: string;
+  title: string;
+  message: string;
+  signature: string;
+}
+
 export interface GalleryImage {
   id: string;
   src: string;
@@ -89,10 +96,12 @@ export interface SeoConfig {
 export interface EventConfig {
   quinceaneraName: string;
   eventDateIso: string;
+  hashtag: string;
   parents: PersonInfo[];
   godparents: PersonInfo[];
   hero: HeroContent;
   story: StoryContent;
+  parentsMessage: ParentsMessageContent;
   gallery: GalleryImage[];
   ceremony: VenueInfo;
   reception: VenueInfo;

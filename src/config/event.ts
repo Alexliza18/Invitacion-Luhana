@@ -14,6 +14,7 @@ import photo6 from '../assets/gallery/photo-6.svg';
 export const eventConfig: EventConfig = {
   quinceaneraName: 'Luhana Saraí Reque Liza',
   eventDateIso: '2026-07-10T17:00:00-05:00',
+  hashtag: '#XVLuhana',
 
   parents: [{ name: 'Manuel Reque Neciosup' }, { name: 'Leonor Liza Reque' }],
 
@@ -38,6 +39,14 @@ export const eventConfig: EventConfig = {
     ],
   },
 
+  parentsMessage: {
+    eyebrow: 'Con todo nuestro amor',
+    title: 'Mensaje de mis Papás',
+    message:
+      'Hija querida, verte llegar a tus XV Años es uno de los regalos más grandes que la vida nos ha dado. Hemos visto crecer a esa niña soñadora hasta convertirse en la mujer maravillosa que eres hoy, y cada paso de tu camino ha llenado nuestro hogar de orgullo y alegría.\nGracias por ser nuestra bendición, por iluminar cada día con tu sonrisa y por enseñarnos, sin saberlo, a amar cada vez más. Que este nuevo capítulo esté lleno de sueños cumplidos, de fe y de la misma luz que llevas dentro.\nTe amamos con todo el corazón, hoy y siempre.',
+    signature: 'Con amor, tus papás Manuel Reque y Leonor Liza',
+  },
+
   gallery: [
     { id: 'photo-1', src: photo1, alt: 'Recuerdo 1 de Luhana' },
     { id: 'photo-2', src: photo2, alt: 'Recuerdo 2 de Luhana' },
@@ -48,19 +57,19 @@ export const eventConfig: EventConfig = {
   ],
 
   ceremony: {
-    name: 'Parroquia Santa María',
-    address: 'Av. de las Rosas 123, Ciudad',
+    name: 'Salón Jardín Dorado',
+    address: 'Simón Bolívar #091, Eten',
     date: 'Viernes 10 de julio, 2026',
     time: '5:00 PM',
-    mapsUrl: 'https://maps.google.com/?q=Parroquia+Santa+Maria',
+    mapsUrl: 'https://maps.google.com/?q=Simon+Bolivar+091+Eten',
   },
 
   reception: {
     name: 'Salón Jardín Dorado',
-    address: 'Simón Bolívar #091',
+    address: 'Simón Bolívar #091, Eten',
     date: 'Viernes 10 de julio, 2026',
     time: '7:00 PM',
-    mapsUrl: 'https://maps.google.com/?q=Simon+Bolivar+091',
+    mapsUrl: 'https://maps.google.com/?q=Simon+Bolivar+091+Eten',
   },
 
   dressCode: {
@@ -109,7 +118,7 @@ export const eventConfig: EventConfig = {
   calendar: {
     title: 'XV Años de Luhana',
     description: 'Celebración de los XV Años de Luhana',
-    location: 'Salón Jardín Dorado, Simón Bolívar #091',
+    location: 'Salón Jardín Dorado, Simón Bolívar #091, Eten',
     startIso: '2026-07-10T17:00:00-05:00',
     endIso: '2026-07-10T23:59:00-05:00',
   },
