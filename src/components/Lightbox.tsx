@@ -30,6 +30,8 @@ export function Lightbox({ images, activeIndex, isOpen, onClose, onNext, onPrevi
 
   if (!activeImage) return null;
 
+  const hasMultipleImages = images.length > 1;
+
   return (
     <Dialog
       open={isOpen}
@@ -55,19 +57,21 @@ export function Lightbox({ images, activeIndex, isOpen, onClose, onNext, onPrevi
           <FaTimes />
         </IconButton>
 
-        <IconButton
-          onClick={onPrevious}
-          aria-label="Imagen anterior"
-          sx={{
-            position: 'absolute',
-            left: { xs: -8, md: -56 },
-            top: '50%',
-            transform: 'translateY(-50%)',
-            color: 'common.white',
-          }}
-        >
-          <FaChevronLeft />
-        </IconButton>
+        {hasMultipleImages && (
+          <IconButton
+            onClick={onPrevious}
+            aria-label="Imagen anterior"
+            sx={{
+              position: 'absolute',
+              left: { xs: -8, md: -56 },
+              top: '50%',
+              transform: 'translateY(-50%)',
+              color: 'common.white',
+            }}
+          >
+            <FaChevronLeft />
+          </IconButton>
+        )}
 
         <AnimatePresence mode="wait">
           <Box
@@ -88,19 +92,21 @@ export function Lightbox({ images, activeIndex, isOpen, onClose, onNext, onPrevi
           />
         </AnimatePresence>
 
-        <IconButton
-          onClick={onNext}
-          aria-label="Imagen siguiente"
-          sx={{
-            position: 'absolute',
-            right: { xs: -8, md: -56 },
-            top: '50%',
-            transform: 'translateY(-50%)',
-            color: 'common.white',
-          }}
-        >
-          <FaChevronRight />
-        </IconButton>
+        {hasMultipleImages && (
+          <IconButton
+            onClick={onNext}
+            aria-label="Imagen siguiente"
+            sx={{
+              position: 'absolute',
+              right: { xs: -8, md: -56 },
+              top: '50%',
+              transform: 'translateY(-50%)',
+              color: 'common.white',
+            }}
+          >
+            <FaChevronRight />
+          </IconButton>
+        )}
       </Box>
     </Dialog>
   );

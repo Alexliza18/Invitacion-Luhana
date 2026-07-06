@@ -1,6 +1,5 @@
 /** Shape of a physical location used across ceremony, reception and the map CTA. */
 export interface VenueInfo {
-  name: string;
   address: string;
   date: string;
   time: string;
@@ -103,7 +102,6 @@ export interface EventConfig {
   story: StoryContent;
   parentsMessage: ParentsMessageContent;
   gallery: GalleryImage[];
-  ceremony: VenueInfo;
   reception: VenueInfo;
   dressCode: DressCodeContent;
   giftTable: GiftTableContent;

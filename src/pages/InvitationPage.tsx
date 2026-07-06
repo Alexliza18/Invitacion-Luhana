@@ -47,7 +47,7 @@ export function InvitationPage() {
             <Story content={eventConfig.story} />
             <ParentsMessage content={eventConfig.parentsMessage} />
             <Gallery images={eventConfig.gallery} hashtag={eventConfig.hashtag} />
-            <EventInfo ceremony={eventConfig.ceremony} reception={eventConfig.reception} />
+            <EventInfo venue={eventConfig.reception} />
             <Location reception={eventConfig.reception} />
             <DressCode content={eventConfig.dressCode} />
             <Schedule items={eventConfig.schedule} />

@@ -17,8 +17,6 @@ export function Location({ reception }: LocationProps) {
         <ScrollReveal>
           <Box sx={{ textAlign: 'center' }}>
             <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3 }}>
-              {reception.name}
-              <br />
               {reception.address}
             </Typography>
             <ElegantButton

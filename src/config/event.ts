@@ -1,10 +1,5 @@
 import type { EventConfig } from '../types/event.types.ts';
-import photo1 from '../assets/gallery/photo-1.svg';
-import photo2 from '../assets/gallery/photo-2.svg';
-import photo3 from '../assets/gallery/photo-3.svg';
-import photo4 from '../assets/gallery/photo-4.svg';
-import photo5 from '../assets/gallery/photo-5.svg';
-import photo6 from '../assets/gallery/photo-6.svg';
+import luhanaPhoto from '../assets/gallery/Luhana Sarai.png';
 
 /**
  * Single source of truth for every piece of event data rendered on the page.
@@ -47,29 +42,13 @@ export const eventConfig: EventConfig = {
     signature: 'Con amor, tus papás Manuel Reque y Leonor Liza',
   },
 
-  gallery: [
-    { id: 'photo-1', src: photo1, alt: 'Recuerdo 1 de Luhana' },
-    { id: 'photo-2', src: photo2, alt: 'Recuerdo 2 de Luhana' },
-    { id: 'photo-3', src: photo3, alt: 'Recuerdo 3 de Luhana' },
-    { id: 'photo-4', src: photo4, alt: 'Recuerdo 4 de Luhana' },
-    { id: 'photo-5', src: photo5, alt: 'Recuerdo 5 de Luhana' },
-    { id: 'photo-6', src: photo6, alt: 'Recuerdo 6 de Luhana' },
-  ],
-
-  ceremony: {
-    name: 'Salón Jardín Dorado',
-    address: 'Simón Bolívar #091, Eten',
-    date: 'Viernes 10 de julio, 2026',
-    time: '5:00 PM',
-    mapsUrl: 'https://maps.google.com/?q=Simon+Bolivar+091+Eten',
-  },
+  gallery: [{ id: 'luhana-sarai', src: luhanaPhoto, alt: 'Luhana Saraí' }],
 
   reception: {
-    name: 'Salón Jardín Dorado',
-    address: 'Simón Bolívar #091, Eten',
+    address: 'Bolívar #190, Eten',
     date: 'Viernes 10 de julio, 2026',
     time: '7:00 PM',
-    mapsUrl: 'https://maps.google.com/?q=Simon+Bolivar+091+Eten',
+    mapsUrl: 'https://maps.google.com/?q=Bolivar+190+Eten',
   },
 
   dressCode: {
@@ -82,7 +61,7 @@ export const eventConfig: EventConfig = {
     title: 'Mesa de Regalos',
     description:
       'Tu presencia es el regalo más importante. Si deseas tener un detalle conmigo, dejo aquí algunas sugerencias.',
-    image: photo4,
+    image: luhanaPhoto,
     buttonLabel: 'Ver Mesa de Regalos',
     buttonUrl: 'https://www.mesaderegalos.example.com/luhana',
   },
@@ -118,7 +97,7 @@ export const eventConfig: EventConfig = {
   calendar: {
     title: 'XV Años de Luhana',
     description: 'Celebración de los XV Años de Luhana',
-    location: 'Salón Jardín Dorado, Simón Bolívar #091, Eten',
+    location: 'Bolívar #190, Eten',
     startIso: '2026-07-10T17:00:00-05:00',
     endIso: '2026-07-10T23:59:00-05:00',
   },
