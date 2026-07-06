@@ -16,6 +16,9 @@ export function Location({ reception }: LocationProps) {
         <SectionTitle eyebrow="¿Cómo llegar?" title="Ubicación" />
         <ScrollReveal>
           <Box sx={{ textAlign: 'center' }}>
+            <Typography variant="body1" sx={{ fontWeight: 600, mb: 0.5 }}>
+              {reception.name}
+            </Typography>
             <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3 }}>
               {reception.address}
             </Typography>

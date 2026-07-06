@@ -29,11 +29,17 @@ export function EventInfo({ venue }: EventInfoProps) {
             <Typography variant="overline" sx={{ letterSpacing: '0.25em', color: 'primary.dark' }}>
               Ceremonia y Recepción
             </Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
-              {venue.date} · {venue.time}
+            <Typography variant="body1" sx={{ fontWeight: 600, mt: 1 }}>
+              {venue.name}
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }}>
               {venue.address}
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
+              {venue.date}
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }}>
+              Ceremonia {venue.ceremonyTime} · Recepción {venue.receptionTime}
             </Typography>
           </Box>
         </ScrollReveal>

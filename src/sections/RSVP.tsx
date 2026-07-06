@@ -9,6 +9,7 @@ import {
   Radio,
   RadioGroup,
   TextField,
+  Typography,
 } from '@mui/material';
 import { SectionTitle } from '../components/SectionTitle.tsx';
 import { ScrollReveal } from '../components/ScrollReveal.tsx';
@@ -67,6 +68,14 @@ export function RSVP({ labels }: RSVPProps) {
     <Box component="section" sx={{ py: { xs: 8, md: 12 }, bgcolor: 'background.default' }}>
       <Container maxWidth="xs">
         <SectionTitle eyebrow="Confirmación" title="RSVP" />
+        {labels.description && (
+          <Typography
+            variant="body2"
+            sx={{ color: 'text.secondary', textAlign: 'center', mb: 3 }}
+          >
+            {labels.description}
+          </Typography>
+        )}
         <ScrollReveal>
           {status === 'success' ? (
             <Alert severity="success" sx={{ borderRadius: 0 }}>

@@ -8,7 +8,7 @@ import luhanaPhoto from '../assets/gallery/Luhana Sarai.png';
  */
 export const eventConfig: EventConfig = {
   quinceaneraName: 'Luhana Saraí Reque Liza',
-  eventDateIso: '2026-07-10T17:00:00-05:00',
+  eventDateIso: '2026-07-10T19:00:00-05:00',
   hashtag: '#XVLuhana',
 
   parents: [{ name: 'Manuel Reque Neciosup' }, { name: 'Leonor Liza Reque' }],
@@ -45,10 +45,12 @@ export const eventConfig: EventConfig = {
   gallery: [{ id: 'luhana-sarai', src: luhanaPhoto, alt: 'Luhana Saraí' }],
 
   reception: {
-    address: 'Bolívar #190, Eten',
+    name: 'Entre Tapas y Copas',
+    address: 'Pedro Ruiz 406, Eten',
     date: 'Viernes 10 de julio, 2026',
-    time: '7:00 PM',
-    mapsUrl: 'https://maps.google.com/?q=Bolivar+190+Eten',
+    ceremonyTime: '7:00 PM',
+    receptionTime: '8:00 PM',
+    mapsUrl: 'https://maps.app.goo.gl/GndfvQ4oNcTzs1fHA',
   },
 
   dressCode: {
@@ -67,14 +69,15 @@ export const eventConfig: EventConfig = {
   },
 
   schedule: [
-    { id: 'ceremonia', time: '5:00 PM', title: 'Ceremonia' },
-    { id: 'recepcion', time: '7:00 PM', title: 'Recepción' },
-    { id: 'cena', time: '8:00 PM', title: 'Cena' },
-    { id: 'baile', time: '10:00 PM', title: 'Baile' },
-    { id: 'fin', time: '12:00 AM', title: 'Fin del evento' },
+    { id: 'ceremonia', time: '7:00 PM', title: 'Ceremonia' },
+    { id: 'recepcion', time: '8:00 PM', title: 'Recepción' },
+    { id: 'cena', time: '9:00 PM', title: 'Cena' },
+    { id: 'baile', time: '11:00 PM', title: 'Baile' },
+    { id: 'fin', time: '1:00 AM', title: 'Fin del evento' },
   ],
 
   rsvp: {
+    description: 'Por favor, confirma tu asistencia antes del evento.',
     firstName: 'Nombre',
     lastName: 'Apellidos',
     phone: 'Teléfono',
@@ -97,8 +100,8 @@ export const eventConfig: EventConfig = {
   calendar: {
     title: 'XV Años de Luhana',
     description: 'Celebración de los XV Años de Luhana',
-    location: 'Bolívar #190, Eten',
-    startIso: '2026-07-10T17:00:00-05:00',
+    location: 'Entre Tapas y Copas, Pedro Ruiz 406, Eten',
+    startIso: '2026-07-10T19:00:00-05:00',
     endIso: '2026-07-10T23:59:00-05:00',
   },
 
