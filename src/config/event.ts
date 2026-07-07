@@ -56,7 +56,7 @@ export const eventConfig: EventConfig = {
   dressCode: {
     title: 'Código de Vestimenta',
     label: 'Formal',
-    description: 'Se sugiere evitar el color rosa palo, reservado para la quinceañera.',
+    description: 'Se sugiere evitar el color nude, reservado para la quinceañera.',
   },
 
   giftTable: {
@@ -77,11 +77,11 @@ export const eventConfig: EventConfig = {
   ],
 
   rsvp: {
-    description: 'Por favor, confirma tu asistencia antes del evento.',
+    description:
+      'Invitación personal e intransferible. Por favor, confirma tu asistencia antes del evento.',
     firstName: 'Nombre',
     lastName: 'Apellidos',
     phone: 'Teléfono',
-    guestCount: 'Cantidad de invitados',
     attendance: '¿Asistirás?',
     attendanceYes: 'Sí, asistiré',
     attendanceNo: 'No podré asistir',

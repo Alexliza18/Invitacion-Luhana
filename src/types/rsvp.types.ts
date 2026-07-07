@@ -4,7 +4,6 @@ export interface RsvpFormData {
   firstName: string;
   lastName: string;
   phone: string;
-  guestCount: number;
   attendance: AttendanceAnswer;
   comments: string;
 }

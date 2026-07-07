@@ -27,7 +27,6 @@ const initialForm: RsvpFormData = {
   firstName: '',
   lastName: '',
   phone: '',
-  guestCount: 1,
   attendance: 'yes',
   comments: '',
 };
@@ -113,18 +112,6 @@ export function RSVP({ labels }: RSVPProps) {
                 fullWidth
                 required
               />
-              <TextField
-                label={labels.guestCount}
-                value={form.guestCount}
-                onChange={(event) => updateField('guestCount', Number(event.target.value))}
-                error={Boolean(errors.guestCount)}
-                helperText={errors.guestCount}
-                type="number"
-                slotProps={{ htmlInput: { min: 1, max: 10 } }}
-                fullWidth
-                required
-              />
-
               <FormControl>
                 <FormLabel id="attendance-label">{labels.attendance}</FormLabel>
                 <RadioGroup

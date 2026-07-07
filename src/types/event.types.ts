@@ -63,7 +63,6 @@ export interface RsvpFieldLabels {
   firstName: string;
   lastName: string;
   phone: string;
-  guestCount: string;
   attendance: string;
   attendanceYes: string;
   attendanceNo: string;

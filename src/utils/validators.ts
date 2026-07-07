@@ -19,10 +19,6 @@ export function validateRsvpForm(data: RsvpFormData): RsvpFormErrors {
     errors.phone = 'Ingresa un teléfono válido.';
   }
 
-  if (!Number.isInteger(data.guestCount) || data.guestCount < 1 || data.guestCount > 10) {
-    errors.guestCount = 'Ingresa un número de invitados entre 1 y 10.';
-  }
-
   return errors;
 }
 
